@@ -15,6 +15,8 @@ find_package(tf2_ros REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
+find_package(robot_localisation REQUIRED)
+find_package(rf2o_laser_odometry REQUIRED)
 
 # 2. Создание исполняемого файла
 add_executable(odometry_node src/odometry_node.cpp)
@@ -29,6 +31,8 @@ ament_target_dependencies(odometry_node
   sensor_msgs
   std_msgs
   tf2_geometry_msgs
+  robot_localization
+  rf2o_laser_odometry
 )
 
 # 4. ПРАВИЛЬНАЯ УСТАНОВКА (Это исправит ошибку с отсутствием libexec/lib папки)
