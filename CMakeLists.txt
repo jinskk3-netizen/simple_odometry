@@ -15,7 +15,7 @@ find_package(tf2_ros REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
-find_package(robot_localisation REQUIRED)
+find_package(robot_localization REQUIRED)
 find_package(rf2o_laser_odometry REQUIRED)
 
 # 2. Создание исполняемого файла
